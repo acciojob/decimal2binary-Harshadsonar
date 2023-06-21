@@ -1,11 +1,8 @@
-function decimalToBinary(decimal){
-	if(decimal === 0){
-		return '0';
+function threeSum(arr, target) {
+	let target = [];
+	for(let a = 0; a < arr.length; a++){
+		target.push(arr[a].toString(2));
 	}
-	let binary = '';
-	while(decimal > 0){
-		binary = (decimal % 2) + binary;
-		decimal = Math.floor(decimal / 2);
-	}
-	return binary;
+	return target;
 }
+module.exports= threeSum;
